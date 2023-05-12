@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import {
     Container,
@@ -6,27 +6,31 @@ import {
 } from './styles';
 import ServerButton from '../ServerButton';
 
-//isHome hasNotification mentions={3}
+//isHome hasNotifications mentions={3}
 
 
 const ServerList: React.FC = () => {
     return(
         <Container>
-            <ServerButton />
+            <ServerButton
+                isHome 
+                hasNotifications={true}
+                mentions={43}
+            />
 
             <Separator />
 
-            <ServerButton />
-            <ServerButton />
-            <ServerButton />
-            <ServerButton />
-            <ServerButton />
-            <ServerButton />
-            <ServerButton />
-            <ServerButton />
-            <ServerButton />
-            <ServerButton />
-            <ServerButton />
+            <ServerButton hasNotifications={false} mentions={0} />
+            <ServerButton hasNotifications={false} mentions={0} />
+            <ServerButton hasNotifications={true} mentions={33} />
+            <ServerButton hasNotifications={false} mentions={0} />
+            <ServerButton hasNotifications={false} mentions={0} />
+            <ServerButton hasNotifications={false} mentions={0} />
+            <ServerButton hasNotifications={false} mentions={0} />
+            <ServerButton hasNotifications={false} mentions={0} />
+            <ServerButton hasNotifications={false} mentions={0} />
+            <ServerButton hasNotifications={true} mentions={7} />
+            <ServerButton hasNotifications={false} mentions={0} />
         </Container>
     )
 }
