@@ -8,4 +8,5 @@ Projeto de estudo sobre Typescript
 - styled-components
 - @types/styled-components
 - eslint-plugin-jest
+- styled-icons
 
