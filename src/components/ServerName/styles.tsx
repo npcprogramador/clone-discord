@@ -7,6 +7,7 @@ import { ExpandMore } from '@styled-icons/material/ExpandMore';
 
 
 export const Container = styled.div`
+    grid-area: SN;
     background-color: var(--secondary);
     display: flex;
     justify-content: space-between;
