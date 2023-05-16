@@ -1,5 +1,9 @@
 import styled from "styled-components";
-import { ExpandMore } from 'styled-icons/material'; //install
+/*==>
+Pacote relativamente pesado, pode ser que der erros de download por rede.
+para corrigir, foi usado "yarn config set network-timeout 600000 -g"
+<==*/
+import { ExpandMore } from 'styled-icons/material';
 
 
 export const Container = styled.div`
