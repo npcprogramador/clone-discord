@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 
 import {
-    Container
+    Container,
+    HashtagIcon,
+    InviteIcon,
+    SettingsIcon
 } from './styles';
 
 //definindo o tipo das props
@@ -12,7 +15,14 @@ export interface Props {
 const ChannelButton: React.FC<Props> = (props) => {
     return(
         <Container>
-            <p>{props.channelName}</p>
+            <div>
+                <HashtagIcon />
+                <span>{props.channelName}</span>
+            </div>
+            <div>
+                <InviteIcon />
+                <SettingsIcon />
+            </div>
         </Container>
     )
 }
