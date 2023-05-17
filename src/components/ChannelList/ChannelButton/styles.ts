@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 import { Hashtag } from "@styled-icons/heroicons-outline/Hashtag";
-import { PersonAdd } from "@styled-icons/evaicons-solid/PersonAdd";
-import { Settings2Outline } from "@styled-icons/evaicons-outline/Settings2Outline";
+import { User } from "@styled-icons/boxicons-solid/User";
+import { Settings } from "@styled-icons/feather/Settings";
 
 
 export const Container = styled.div`
@@ -18,15 +18,17 @@ export const HashtagIcon = styled(Hashtag)`
     color: var(--white);
 `;
 
-export const InviteIcon = styled(PersonAdd)`
+export const InviteIcon = styled(User)`
     height: 24px;
     width: 24px;
     color: var(--white);
+    cursor: pointer;
 `;
 
-export const SettingsIcon = styled(Settings2Outline)`
+export const SettingsIcon = styled(Settings)`
     height: 24px;
     width: 24px;
     color: var(--white);
+    cursor: pointer;
 `;
 
