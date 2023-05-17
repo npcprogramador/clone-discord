@@ -4,7 +4,7 @@ import {
     Container,
     Separator
 } from './styles';
-import ServerButton from '../ServerButton';
+import ServerButton from './ServerButton';
 
 //isHome hasNotifications mentions={3}
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "./styles";
-import logo from '../../assets/logo.svg';
+import logo from '../../../assets/logo.svg';
 
 
 export interface Props {

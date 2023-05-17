@@ -1,11 +1,8 @@
 import styled from "styled-components";
+import { ExpandMore } from '@styled-icons/material/ExpandMore';
 
 
 export const Container = styled.div`
-    grid-area: CL;
+    grid-area: UL;
     background-color: var(--secondary);
 `;
-
-export const Category = styled.div``;
-
-export const AddCategoryIcon = styled.div``;
