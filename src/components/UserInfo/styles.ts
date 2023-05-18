@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { Microphone } from "@styled-icons/boxicons-solid/Microphone";
-import { Headphones } from "@styled-icons/bootstrap/Headphones";
+import { Mic } from "@styled-icons/material/Mic";
+import { Headset } from "@styled-icons/material/Headset";
 import { Settings } from "@styled-icons/material/Settings";
 
 
@@ -10,38 +10,73 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 16px 10px 15px 10px;
+    padding: 10px;
+    box-shadow: rgba(0,0,0,0.2) 0px 1px 0px 0px;
 `;
 
 
-export const Profile = styled.div``;
-
-export const Avatar = styled.div``;
-
-export const UserData = styled.div``;
-
-export const Icons = styled.div`
+export const Profile = styled.div`
     display: flex;
     align-items: center;
 `;
 
-export const MicIcon = styled(Microphone)`
-    height: 20px;
-    width: 20px;
-    color: var(--symbol);
-    margin: 3.5px;
+export const Avatar = styled.div`
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: var(--gray);
 `;
 
-export const HeadPhoneIcon = styled(Headphones)`
+export const UserData = styled.div`
+    margin-left: 8px;
+
+    display: flex;
+    flex-direction: column;
+    
+    strong {
+        font-size: 13px;
+        color: var(--white);
+        display: block;
+    }
+
+    span {
+        color: var(--gray);
+        font-size: 13px;
+    }
+`;
+
+export const Icons = styled.div`
+    display: flex;
+    align-items: center;
+
+    svg:not(:fist-child) { //seleciona os icones menos o primeiro
+        margin-left: 7px;
+    }
+
+    svg {
+        opacity: 0.7;
+        transition: opacity 0.3s;
+        color: var(--white);
+    }
+    svg:hover {
+        opacity: 1;
+    }
+`;
+
+export const MicIcon = styled(Mic)`
     height: 20px;
     width: 20px;
-    color: var(--symbol);
-    margin: 3.5px;
+    cursor: pointer;
+`;
+
+export const HeadPhoneIcon = styled(Headset)`
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
 `;
 
 export const SettingsIcon = styled(Settings)`
     height: 20px;
     width: 20px;
-    color: var(--symbol);
-    margin: 3.5px;
+    cursor: pointer;
 `;
