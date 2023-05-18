@@ -30,12 +30,20 @@ export const Container = styled.div`
         margin-left: 5px;
     }
 
+    div.icon {
+        display: none;
+    }
+
     &.active,
     &:hover {
         background-color: var(--quinary);
 
         div span  {
             color: var(--white);
+        }
+
+        div.icon  {
+            display: flex;
         }
     }
 `;

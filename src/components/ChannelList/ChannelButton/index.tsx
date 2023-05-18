@@ -20,7 +20,7 @@ const ChannelButton: React.FC<Props> = ({selected, channelName}) => {
                 <HashtagIcon />
                 <span>{channelName}</span>
             </div>
-            <div>
+            <div className='icon'>
                 <InviteIcon />
                 <SettingsIcon />
             </div>
