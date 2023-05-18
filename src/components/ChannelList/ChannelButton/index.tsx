@@ -10,14 +10,15 @@ import {
 //definindo o tipo das props
 export interface Props {
     channelName?: string
+    selected?: boolean
 }
 
-const ChannelButton: React.FC<Props> = (props) => {
+const ChannelButton: React.FC<Props> = ({selected, channelName}) => {
     return(
-        <Container>
+        <Container className={selected ? 'active' : ''}>
             <div>
                 <HashtagIcon />
-                <span>{props.channelName}</span>
+                <span>{channelName}</span>
             </div>
             <div>
                 <InviteIcon />
