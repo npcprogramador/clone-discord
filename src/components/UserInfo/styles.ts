@@ -37,6 +37,11 @@ export const UserData = styled.div`
         font-size: 13px;
         color: var(--white);
         display: block;
+
+        max-width: 110px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
 
     span {
