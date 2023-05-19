@@ -1,13 +1,24 @@
 import React, { useState } from 'react';
 
 import {
-    Container
+    Container,
+    Messags,
+    InputWrapper,
+    Input,
+    InputIcon
 } from './styles';
+
 
 
 const ChannelData: React.FC = () => {
     return(
         <Container>
+            <Messags />
+
+            <InputWrapper>
+                <Input />
+                <InputIcon />
+            </InputWrapper>
         </Container>
     )
 }
