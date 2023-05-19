@@ -68,4 +68,11 @@ export const InputIcon = styled(AlternateEmail)`
     color: var(--gray);
 `;
 
-export const Mention = styled.div``;
+export const Mention = styled.span`
+    color: var(--link);
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: underline;
+    }
+`;

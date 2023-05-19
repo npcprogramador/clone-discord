@@ -5,7 +5,8 @@ import {
     Messags,
     InputWrapper,
     Input,
-    InputIcon
+    InputIcon,
+    Mention
 } from './styles';
 import ChannelMesage from './ChannelMesage';
 
@@ -21,15 +22,16 @@ const ChannelData: React.FC = () => {
                     content="Mais um dia Feliz!"
                 />
 
-                {/* <ChannelMesage
+                <ChannelMesage
+                    isBot
                     author="rafael"
                     date="21/06/2020"
                     content={
                         <>
-                            <Mention>@Guilherme Walison</Mention>, Olá, mee ajuda a estudar ?
+                            <Mention>@Guilherme Walison</Mention>, Olá, me ajuda a estudar ?
                         </>
                     }
-                /> */}
+                />
             </Messags>
 
             <InputWrapper>
