@@ -7,16 +7,33 @@ import {
     Input,
     InputIcon
 } from './styles';
+import ChannelMesage from './ChannelMesage';
 
 
 
 const ChannelData: React.FC = () => {
     return(
         <Container>
-            <Messags />
+            <Messags>
+                <ChannelMesage
+                    author="Guilherme Walison"
+                    date="21/06/2020"
+                    content="Mais um dia Feliz!"
+                />
+
+                {/* <ChannelMesage
+                    author="rafael"
+                    date="21/06/2020"
+                    content={
+                        <>
+                            <Mention>@Guilherme Walison</Mention>, Olá, mee ajuda a estudar ?
+                        </>
+                    }
+                /> */}
+            </Messags>
 
             <InputWrapper>
-                <Input />
+                <Input type='text' placeholder='Conversar em #chat-livre'/>
                 <InputIcon />
             </InputWrapper>
         </Container>
